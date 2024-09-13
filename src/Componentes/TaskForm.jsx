@@ -12,6 +12,8 @@ export function TaskForm({ Create_task }) {
       TITLE,
       DESCRIPTION,
     });
+    setTitle("")
+    setDescription("")
   };
   return (
     <div className="max-w-md mx-auto">
@@ -27,6 +29,7 @@ export function TaskForm({ Create_task }) {
         <textarea
           placeholder="Descripcion"
           onChange={(e) => setDescription(e.target.value)}
+          value={DESCRIPTION}
           className="bg-slate-300 p-3 w-full mb-2"
         ></textarea>
 
